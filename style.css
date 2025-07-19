@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: white;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+}
+
+.game-container {
+  padding: 40px;
+}
+
+img#friend-img {
+  width: 200px;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: transform 0.2s ease;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+img#troll-face {
+  width: 150px;
+  display: none;
+  margin-top: 30px;
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: translate(0px, 0px); }
+  25% { transform: translate(-5px, 5px); }
+  50% { transform: translate(5px, -5px); }
+  75% { transform: translate(-5px, -5px); }
+  100% { transform: translate(0px, 0px); }
+}
